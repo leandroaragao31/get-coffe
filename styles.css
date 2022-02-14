@@ -106,6 +106,13 @@ main{
         justify-content: space-evenly;
         align-items: center;
     }
+    .container--img{
+        position:absolute;
+        height: 30vh;
+        z-index: -2;
+        right:73vw;
+        top:17vh;
+    }
     
 }
 
