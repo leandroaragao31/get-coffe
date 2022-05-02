@@ -7,6 +7,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap');
 
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -73,10 +75,12 @@ main{
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-content: space-around;
     align-items: flex-start;
     height: 70vh;
     width: 50%;
+    
     
 }
 
@@ -90,17 +94,6 @@ main{
         align-items: center;
     }
 
-    .container h2{
-        display: flex;
-        text-align: justify;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width:32vw;
-        height: 10vh;
-        font-size:5vw;
-             
-    }
     .container div{
         display: flex;
         flex-direction: column;
@@ -110,7 +103,23 @@ main{
         height: 40vh;
         font-size: 3vw;
         border-radius:5px;
+    
     }
+
+
+    .container h2{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width:32vw;
+        height: 10vh;
+        font-size:5vw;
+    
+             
+    }
+ 
 
     .container button{
         background-color: #FCA60F;
@@ -120,6 +129,7 @@ main{
         color:#FFFFFF;
         border-radius:5px;
         border:none;
+        margin-top: 3vh;
     }
 
     .container nav{
@@ -142,18 +152,31 @@ main{
     }
     .container--img{
         position:absolute;
-        height: 30vh;
+        height: 60vh;
+        width: 70%;
         z-index: -2;
-        right:73vw;
-        top:17vh;
+        right:60vw;
+        top:23vh;
+        
     }
+
+    .container_coffe--img2{
+        position: absolute;
+        z-index: -2;
+        height: 50vh;
+        top:40vh;
+       right: -15vw;
+        
+       
+    } 
     
 }
 
 .container h2{
     width:38vw;
     height: 21vh;
-    font-size:2.5vw;
+    font-size:2.3vw;
+    margin-bottom: 3vh;
 }
 
 .container button{
@@ -198,11 +221,13 @@ main{
 
 @media (max-width:500px){
   .container_coffe{
-     display: none;
+     height: 80vh;
+     width: 40%;
+    overflow: hidden;
       
   }
 
-   .container_coffe img{
+   .container_coffe--img1{
            display: none;
     }
 
@@ -222,12 +247,13 @@ main{
     }
 }
 
-.container_coffe--img{
+.container_coffe--img2{
     position: absolute;
     z-index: -2;
     height: 60vh;
     top:15vh;
-    right: 1vw;
+    overflow: hidden;
+    
    
 } 
 
